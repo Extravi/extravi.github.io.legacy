@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extravi - TailsX docs</title>
+    <meta name="description" content="A personal website for me and my projects.">
+    <meta content="Extravi - TailsX docs" property="og:title">
+    <meta content="A personal website for me and my projects." property="og:description">
+    <meta content="/" property="og:url">
+    <meta content="#5885F4" data-react-helmet="true" name="theme-color">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/SmoothScroll.min.js"></script>
+    <script src="/prism.js"></script>
+    <link rel="stylesheet" href="/prism.css">
+</head>
+
+<div class="wrapper">
+    <div class="navbar">
+        <div class="logo">
+            <a href="/">Extravi</a>
+        </div>
+        <ul class="menu">
+            <a href="https://tailsx.extravi.dev/" target="_blank">TailsX</a>
+            <a href="https://bloxshade.com/" target="_blank">Bloxshade</a>
+            <a href="https://www.youtube.com/c/Extravi" target="_blank">YouTube</a>
+            <a class="mobile" href="https://github.com/Extravi" target="_blank">GitHub</a>
+            <a class="mobile" href="mailto:extravi@extravi.dev">Email</a>
+            <a href="/">Docs</a>
+        </ul>
+    </div>
+</div>
+
+<body>
+    <main>
+        <div class="bg-image">
+            <div class="overlay">
+                <h1>Tails<span class="X">X</span></h1>
+                <h2 class="h2-width">Documentation</h2>
+            </div>
+        </div>
+        <div id="section-0" class="section section-2 docs-section-1">
+            <div class="section-content section-content-2">
+                <h3>Running TailsX with Docker</h3>
+                <h2>Table of contents</h2>
+                <ul class="table-of-contents">
+                    <li><a href="#modify-dockerfile">Modify the Dockerfile</a><ul class="table-of-contents">
+                        <li><a href="#add-your-domain">Add your domain</a></li>
+                        <li><a href="#configure-gunicorn">Configuring Gunicorn (Optional)</a></li>
+                    </ul></li>
+                    <li><a href="#build-and-run">Build & run TailsX</a></li>
+                    <li><a href="#test-your-server">Test your server</a></li>
+                </ul>
+                <br>
+                <p class="p-reset">TailsX can be ran under a Docker container easily.</p>
+                <br>
+                <h3 id="modify-dockerfile">Modify the Dockerfile (aptly named <code class="monospaced">Dockerfile</code>)</h3>
+                <h2 id="add-your-domain">Add your domain</h2>
+                <p class="p-reset">There should be a line in the Dockerfile that looks like this;</p>
+                <pre><code class="language-docker"># ENV DOMAIN=https://www.yourdomain.com</code></pre>
+                <p class="p-reset">Uncomment this line by removing the <code class="monospaced">#</code> and change the domain to your own domain.</p>
+                <br>
+                <h2 id="configure-gunicorn">Configuring Gunicorn (Optional)</h2>
+                <p class="p-reset">The default configuration of Gunicorn works, but you can optionally configure it to your liking.</p>
+                <br>
+                <p class="p-reset">The command that will be called can be found in <code class="monospaced">CMD</code> (see the very end of the file). The arguments are seperated into different strings in a list.</p>
+                <br>
+                <p class="p-reset">See<a href="https://docs.gunicorn.org/en/latest/run.html" target="_blank">the gunicorn docs</a>on running gunicorn and<a href="https://docs.docker.com/engine/reference/builder/#cmd" target="_blank">the Docker docs</a>on how the <code class="monospaced">CMD</code> instruction works.</p>
+                <br>
+                <h3 id="build-and-run">Build & run TailsX</h3>
+                <p class="p-reset">Build an image and tag it with <code class="monospaced">tailsx:latest</code>.</p>
+                <pre><code class="language-bash">docker build -t tailsx:latest .</code></pre>
+                <p class="p-reset">Start the image with <code class="monospaced">docker-compose</code>.</p>
+                <pre><code class="language-bash">docker-compose up</code></pre>
+                <p class="p-reset"><i>NOTE: If you experience any permissions errors, you can try running both commands with <code class="monospaced">sudo</code>.</i></p>
+                <br>
+                <h3 id="test-your-server">Test your server</h3>
+                <p class="p-reset">See <a href="/tailsx/#test-your-server">here</a> on testing your server.</p>
+            </div>
+        </div>
+        <div id="footer" class="section footer-docs">
+            <div class="section-content">
+                <ul>
+                    <li><a href="https://www.youtube.com/c/Extravi" target="_blank">YouTube</a></li>
+                    <li><a href="https://github.com/Extravi" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:extravi@extravi.dev">Email</a></li>
+                </ul>
+                <p>© 2023 Extravi. All rights reserved.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

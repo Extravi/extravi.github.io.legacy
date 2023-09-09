@@ -45,6 +45,15 @@ body {
     border-bottom: 1px solid #282828;
 }
 
+.table-of-contents {
+    list-style: none;
+}
+
+.monospaced {
+    color: #ffcc7f;
+    font-size: 90%;
+}
+
 .section-content {
     align-items: center;
 }
