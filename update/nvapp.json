@@ -1,3 +1,4 @@
 {
-    "source": "https://us.download.nvidia.com/nvapp/client/10.0.2.210/NVIDIA_app_beta_v10.0.2.210.exe"
+    "source": "https://us.download.nvidia.com/nvapp/client/10.0.2.210/NVIDIA_app_beta_v10.0.2.210.exe",
+    "profile": "https://raw.githubusercontent.com/Extravi/nv-profile/main/component_profiles.json"
 }
