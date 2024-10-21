@@ -1,7 +1,7 @@
 {
     "presets": [
         {
-            "title": "<span style="background: linear-gradient(90deg, orange, purple); -webkit-background-clip: text; color: transparent;">Happy Halloween!</span>",
+            "title": "<span style=\"background: linear-gradient(90deg, orange, purple); -webkit-background-clip: text; color: transparent;\">Happy Halloween!</span>",
             "description": "",
             "author": "",
             "source": ""
