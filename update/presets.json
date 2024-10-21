@@ -1,12 +1,6 @@
 {
     "presets": [
         {
-            "title": "<span style=\"background: linear-gradient(90deg, orange, purple); -webkit-background-clip: text; color: transparent;\">Happy Halloween!</span>",
-            "description": "",
-            "author": "",
-            "source": ""
-        },
-        {
             "title": "Socks V2",
             "description": "The perfect pair.",
             "author": "Ax",
