@@ -1,6 +1,12 @@
 {
     "presets": [
         {
+            "title": "Bloxshade Hallows Eve 🎃",
+            "description": "Spook up your game with these jaw-dropping presets.",
+            "author": "Bloxshade",
+            "source": "https://github.com/Extravi/ansel-presets/raw/refs/heads/main/presets/Bloxshade/bloxshade-hallows-eve.zip"
+        },
+        {
             "title": "Socks V2",
             "description": "The perfect pair.",
             "author": "Ax",
