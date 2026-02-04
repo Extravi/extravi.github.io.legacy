@@ -102,7 +102,7 @@ a:hover {
 .bg-image::before {
     content: "";
     position: absolute;
-    background: url("/images/priyanuch-konkaew-JaR_cKU3J_Y-unsplash.webp") no-repeat center;
+    background: url("/extravi.github.io.legacy/images/priyanuch-konkaew-JaR_cKU3J_Y-unsplash.webp") no-repeat center;
     top: -10px;
     left: -10px;
     width: calc(100% + 20px);
@@ -189,7 +189,7 @@ img {
     border-top-right-radius: 8px;
     border-bottom: 1px solid #363a3c;
     margin-bottom: 15px;
-    background: url("/images/docs-img.png") no-repeat center;
+    background: url("/extravi.github.io.legacy/images/docs-img.png") no-repeat center;
     top: 0;
 }
 
@@ -200,7 +200,7 @@ img {
     border-top-right-radius: 8px;
     border-bottom: 1px solid #363a3c;
     margin-bottom: 15px;
-    background: url("/images/docs-img-1.webp") no-repeat center;
+    background: url("/extravi.github.io.legacy/images/docs-img-1.webp") no-repeat center;
     top: 0;
 }
 
@@ -285,7 +285,7 @@ a:hover {
 }
 
 .img-0 {
-    background-image: url("/images/GitHub-Mark-Light-120px-plus.png");
+    background-image: url("/extravi.github.io.legacy/images/GitHub-Mark-Light-120px-plus.png");
 }
 
 .section {
